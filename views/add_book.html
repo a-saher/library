@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Library - Add Book</title>
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../assets/plugins/icomoon/style.css" rel="stylesheet">
+        <link href="../assets/plugins/uniform/css/default.css" rel="stylesheet"/>
+        <link href="../assets/plugins/switchery/switchery.min.css" rel="stylesheet"/>
+      
+        <!-- Theme Styles -->
+        <link href="../assets/css/ecaps.min.css" rel="stylesheet">
+        <link href="../assets/css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="page-sidebar">
+                <a class="logo-box" href="index.html">
+                    <span>ecaps</span>
+                    <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
+                </a>
+                <div class="page-sidebar-inner">
+                    <div class="page-sidebar-menu">
+                        <ul class="accordion-menu">
+                            <li>
+                                <a href="index.html">
+                                    <i class="menu-icon icon-home4"></i><span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="add_book.html">
+                                    <i class="menu-icon icon-inbox"></i><span>Add Book</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="page-content">
+                <div class="page-header">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <div class="logo-sm">
+                                    <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
+                                    <a class="logo-box" href="index.html"><span>ecaps</span></a>
+                                </div>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#" onclick="logout()">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="page-inner">
+                    <div class="page-title">
+                        <h3 class="breadcrumb-header">Add Book</h3>
+                    </div>
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Title</label>
+                                            <input type="text" class="form-control" id="title" placeholder="Title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Image</label>
+                                            <input type="file" class="form-control" id="image">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description</label>
+                                            <input type="text" class="form-control" id="description" placeholder="Description">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"onclick="addBook()" >Add Book</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer"><p>2020 كل الحقوق محفوظة</p></div>
+            </div>
+        </div>
+        
+        <script src="../assets/plugins/jquery/jquery-3.1.0.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="../assets/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+        <script src="../assets/plugins/switchery/switchery.min.js"></script>
+        <script src="../assets/js/ecaps.min.js"></script>
+    </body>
+</html>
